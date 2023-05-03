@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Calcular distância entre dois lugares</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="App.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Descubra a distância entre dois locais utilizando Google Maps API.</h1>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="from"></label>
+                <input type="text" id="from" placeholder="Local de Partida" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="to"></label>
+                <input type="text" id="to" placeholder="Local de Destino" class="form-control">
+            </div>
+        </form>
+
+        <div class="form-group">
+            <button class="btn btn-info btn-lg" onclick="calcRoute();">Calcular</button>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="output"></div>
+        <div id="googleMap"></div>
+    </div>
+    </div>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWU6lSaErtcDt1ADCcs4WNAmscQDd63wE&libraries=places"></script>
+        <!-- jQuery (Necessária para Bootstrap JavaScript plugin) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="Main.js"></script>
+</body>
+
+</html>
